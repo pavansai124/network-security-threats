@@ -1,0 +1,118 @@
+# Research Report on Common Network Security Threats
+
+## Abstract
+Network security threats are evolving rapidly as attackers develop new methods to compromise systems. This report explores three common threats—Denial of Service (DoS) attacks, Man-in-the-Middle (MITM) attacks, and spoofing. Each threat is explained in terms of how it works, its real-world impact, and mitigation strategies. Case studies of past attacks are included to highlight the severity of these threats. The report concludes with preventive measures and best practices for organizations and individuals.
+
+---
+
+## Introduction
+In the modern digital era, network security has become one of the most critical aspects of information technology. Organizations rely heavily on secure networks to conduct business operations, communicate, and store sensitive data. However, attackers continuously attempt to exploit vulnerabilities for financial gain, espionage, or disruption.  
+This report focuses on three common threats:
+1. *Denial of Service (DoS) attacks*  
+2. *Man-in-the-Middle (MITM) attacks*  
+3. *Spoofing attacks*  
+
+Understanding these threats is essential to designing secure systems and implementing effective defense mechanisms.
+
+---
+
+## Common Network Security Threats
+
+### 1. Denial of Service (DoS) & Distributed Denial of Service (DDoS) Attacks
+*Definition:*  
+A DoS attack attempts to make a system or network unavailable to its intended users by overwhelming it with traffic or exploiting vulnerabilities. A DDoS attack amplifies this by using multiple compromised systems (botnets) to flood a target.
+
+*How it Works:*  
+- Attackers send massive amounts of traffic to a server.  
+- Server resources (CPU, bandwidth, memory) are exhausted.  
+- Legitimate users cannot access services.  
+
+*Impact:*  
+- Service downtime  
+- Financial losses due to business interruption  
+- Reputational damage  
+
+*Real-World Example:*  
+In 2018, *GitHub* experienced one of the largest DDoS attacks in history, with traffic peaking at 1.35 Tbps. The service was taken offline briefly but recovered with DDoS mitigation tools.
+
+*Mitigation:*  
+- Deploy DDoS protection services (Cloudflare, Akamai).  
+- Configure firewalls and Intrusion Prevention Systems (IPS).  
+- Implement rate limiting and traffic filtering.  
+
+---
+
+### 2. Man-in-the-Middle (MITM) Attacks
+*Definition:*  
+A MITM attack occurs when an attacker secretly intercepts and alters communication between two parties without their knowledge.
+
+*How it Works:*  
+- Attacker places themselves between two communicating devices.  
+- Data such as login credentials or financial transactions are intercepted.  
+- Sometimes, the attacker modifies the communication before passing it on.  
+
+*Impact:*  
+- Theft of sensitive data (passwords, credit card numbers).  
+- Unauthorized access to accounts or systems.  
+- Loss of confidentiality and trust.  
+
+*Real-World Example:*  
+Public Wi-Fi hotspots are common grounds for MITM attacks. In 2015, Lenovo laptops were found to have a preinstalled program (Superfish Adware) that enabled MITM attacks on HTTPS traffic.  
+
+*Mitigation:*  
+- Use *end-to-end encryption (HTTPS, TLS, SSL)*.  
+- Implement *VPNs* for secure remote access.  
+- Enable *certificate pinning* to prevent fake certificates.  
+- Avoid untrusted public Wi-Fi or use a trusted VPN service.  
+
+---
+
+### 3. Spoofing Attacks
+*Definition:*  
+Spoofing involves disguising communication from an unknown source as being from a trusted one. Common types include IP spoofing, MAC spoofing, and DNS spoofing.
+
+*How it Works:*  
+- *IP Spoofing:* Attacker forges source IP address to impersonate another system.  
+- *MAC Spoofing:* Attacker changes MAC address to bypass filters.  
+- *DNS Spoofing:* Redirects traffic to malicious websites by corrupting DNS records.  
+
+*Impact:*  
+- Redirection to phishing websites.  
+- Unauthorized access to networks.  
+- Facilitates other attacks like DoS or MITM.  
+
+*Real-World Example:*  
+In 2010, hackers used *DNS spoofing* to redirect users from bank websites to fake login pages, stealing sensitive financial information.  
+
+*Mitigation:*  
+- Use *DNSSEC* (Domain Name System Security Extensions).  
+- Implement *packet filtering* on firewalls.  
+- Enable *Dynamic ARP Inspection (DAI)* to prevent ARP spoofing.  
+- Regularly monitor and audit DNS traffic.  
+
+---
+
+## Comparative Analysis
+| Threat Type  | Difficulty to Detect | Common Target | Example Impact | Difficulty to Mitigate |
+|--------------|----------------------|---------------|----------------|-------------------------|
+| DoS/DDoS     | Medium               | Servers, Websites | Service downtime, financial loss | High (requires large-scale defenses) |
+| MITM         | High                 | Public Wi-Fi, web sessions | Credential theft, data leakage | Medium (encryption reduces risk) |
+| Spoofing     | Medium               | DNS servers, local networks | Traffic redirection, phishing | Medium (requires DNSSEC & monitoring) |
+
+---
+
+## Preventive Measures & Best Practices
+To protect against these threats, organizations should adopt a *multi-layered security approach*:
+- *Firewalls & IDS/IPS:* Detect and block suspicious traffic.  
+- *Encryption (TLS/SSL, VPN):* Prevent MITM attacks.  
+- *Regular patching & updates:* Reduce vulnerabilities.  
+- *DNSSEC & ARP inspection:* Prevent spoofing attacks.  
+- *DDoS mitigation tools:* Protect against large-scale traffic floods.  
+- *User Awareness Training:* Educate employees about phishing, insecure Wi-Fi, and spoofed sites.  
+
+---
+
+## Conclusion
+Network security threats such as DoS, MITM, and spoofing remain significant challenges in today’s interconnected world. These attacks can disrupt services, compromise sensitive data, and cause substantial financial and reputational damage. However, with robust preventive measures such as encryption, traffic monitoring, and DDoS protection, organizations can significantly reduce their risk exposure. Ultimately, continuous monitoring, proactive defense strategies, and awareness are key to maintaining network security.
+
+---
