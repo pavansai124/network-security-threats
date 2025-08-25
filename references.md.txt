@@ -1,19 +1,13 @@
 # References
 
-1. Cloudflare. What is a DDoS Attack?  
-   https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/
+1. [Cloudflare – What is a DDoS Attack?](https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/)
 
-2. Krebs on Security. GitHub Survives Largest DDoS Attack Ever Recorded. (2018)  
-   https://krebsonsecurity.com/2018/03/github-survives-largest-ddos-attack-ever/
+2. [Krebs on Security – GitHub Survives Largest DDoS Attack Ever Recorded (2018)](https://krebsonsecurity.com/2018/03/github-survives-largest-ddos-attack-ever/)
 
-3. OWASP. Man-in-the-Middle Attack.  
-   https://owasp.org/www-community/attacks/Man-in-the-middle
+3. [OWASP – Man-in-the-Middle Attack](https://owasp.org/www-community/attacks/Man-in-the-middle)
 
-4. IBM Security. DNS Spoofing Explained.  
-   https://www.ibm.com/topics/dns-spoofing
+4. [IBM Security – DNS Spoofing Explained](https://www.ibm.com/topics/dns-spoofing)
 
-5. Symantec Threat Report (2022).  
-   https://symantec-enterprise-blogs.security.com
+5. [Symantec – Internet Security Threat Report (2022)](https://symantec-enterprise-blogs.security.com)
 
-6. Verizon. Data Breach Investigations Report (DBIR). (2023)  
-   https://www.verizon.com/business/resources/reports/dbir/ 
+6. [Verizon – Data Breach Investigations Report (DBIR, 2023)](https://www.verizon.com/business/resources/reports/dbir/)
